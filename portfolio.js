@@ -1,5 +1,35 @@
 'use strict';
 
+
+
+const navlinks = document.querySelectorAll('header nav a')
+
+const activepage = () => {
+    navlinks.forEach(link => {
+        link.classList.remove('active1');
+    });
+};
+
+navlinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if(!link.classList.contains('active1')){
+            activepage()
+
+            link.classList.add('active1')
+        }
+    });
+});
+
+const menuicon = document.querySelector('#menu-icon')
+const navbar = document.querySelector('header nav')
+
+
+
+
+
+
+
+
     const preloader = document.querySelector("[data-preload]");
 
     window.addEventListener("load", function() {

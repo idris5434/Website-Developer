@@ -20,9 +20,10 @@
     <!--Header-->
     <header>
         <h2>id.coder</h2>
+        <i class="bx bx-mrnu" id="menu-icon"></i>
         <nav>
             <ul>
-                <li><a href="#home">home</a></li>
+                <li><a class="active1" href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#services">services</a></li>
                 <li><a href="#skills">skills</a></li>
@@ -80,7 +81,7 @@
         <div class="about-text">
             <h2>about <span>me</span></h2>
             <h4>Front-End Developer</h4>
-            <p>I’m Idris — I am 19 years old and I am frontend developer dedicated to clean, powerful web experiences.
+            <p>I’m Idris — I am 19 years old and I am frontend developer with 2 Years Experience and i dedicated to clean, powerful web experiences.
                 I work confidently with HTML, CSS, JavaScript.
                 I also use React.js, jQuery, Angular, and Tailwind.
                 I build interfaces that are fast, responsive, and visually sharp.
@@ -147,9 +148,9 @@
 
 
     <!--skills-->
-    <section>
+    <section >
         <div class="skills" id="skills">
-            <h1 class="sub-title">My <span style="color: #07fe03;">Skills</span></h1>
+            <h1 >My <span style="color: #07fe03;">Skills</span></h1>
             <div class="container1">
                 <div class="box">
                     
@@ -315,53 +316,58 @@
     </section>
 
     <!--contact-->
-    <h2 class="sub-title">Contact <span>Me</span></h2>
+
     <section class="contact" id="contact">
-        <div class="contact-text">
-            <h4>Let's Work Together</h4>
-            <p>i'm glad you've visiting my portfolio website. if you have any questions,
-               suggestons, or would like to collaborate, pleasr feel free to contact menu
-               through this form. i will endeavor to reply to your message as possible
-            </p>
-            <div class="contact-list">
-                <li><i class="bx bxs-send" style="color: #07fe03;"></i> idrismussa700@gmali.com</li>
-                <li><i class="bx bxs-phone" style="color: #07fe03;"></i>+251991928388</li>
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Lets's Work Together</h2>
+                <p class="desc">
+                    i'm glad you've visiting my portfolio website. if you have any questions,
+                    suggestons, or would like to collaborate, pleasr feel free to contact menu
+                    through this form. i will endeavor to reply to your message as possible
+                </p>
+
+                <div class="contact-detail">
+                    <i class='bx  bxs-phone'></i>  
+                    <div class="detail">
+                        <p>phone</p>
+                        <p>+251991928388</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx  bxs-envelope'></i>  
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>idrismussa700@gmali.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx  bxs-map'></i>  
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>Ethiopia, Semera</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span style="color: #07fe03;">Me</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
-
-        <div class="contact-form">
-            <form id="form" action="https://api.web3forms.com/submit"   method="POST">
-                <input type="hidden" name="access_key" value="88351c36-4c56-4c61-8437-972a605d498f">
-
-                <div class="input-box ">
-                    <input type="name" id="name" placeholder="" class="item"  required>
-                    <label for="" id="label"> Enter Your Name </label>
-                </div>
-                
-                <div class="input-box">
-                    <input type="text" id="email" placeholder="" class="item"  required>
-                    <label for="" id="label"> Enter Your Email </label>
-                </div>
-
-                <div class="input-box">
-                    <input type="text" id="Subject" placeholder="" class="item"   required>
-                    <label for="" id="label"> Enter Your Subject </label>
-                </div>
-
-                <div class="input-box">
-                    <textarea name="" id="message" class="message" cols="40" rows="10"  placeholder="Enter Your Message" required ></textarea>
-                </div>
-
-                <div class="input-box">
-                    <input type="submit" value="submit" class="send" placeholder="" id="input">
-                </div>
-                <p id="result"></p>
-            </form>
-        </div>
     </section>
-
     
-
 
     <button id="btn">^</button>
     <div class="last-text">
